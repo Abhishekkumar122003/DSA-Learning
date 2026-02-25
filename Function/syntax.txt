@@ -1,0 +1,5 @@
+return_type function_name(parameters){
+    
+    //function body
+    return value;
+}

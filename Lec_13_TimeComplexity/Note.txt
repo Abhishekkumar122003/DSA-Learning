@@ -1,0 +1,17 @@
+Time Complexity is a total time take by an algorithm to run as a function/size of length of an input
+
+to calculate the Time Complexity of your algorithm  
+#Rule->1
+1. first count all the steps which gonna exicut by your program to complete the task 
+2. Do the SUM of all the STEPS -> it gonna look like in the form of "n"
+example-> for(it i=0;i<=n;i++){
+    cout<<"Hi there Chamka ki nhi";
+}
+ -> so in this exampple there is 4 step for the first time iteration but after the first iteration from 2 the nuber of iteration is 3 
+      till the  "n" 
+
+      ->it look like 4+3+3+3+3+..... upto to "n"
+      -> which is equal to (3n+1)
+
+3. FInal step ignor all the the constant term 
+        -> final Time Complexity looks like >O(n)
