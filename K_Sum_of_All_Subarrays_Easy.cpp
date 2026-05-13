@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-#define int long long 
+#define int long long
 signed main(){
     int n;
     cin>>n;
@@ -8,10 +8,9 @@ signed main(){
     for(int i=0; i<n; i++){
         cin>>a[i];
     }
-    for(int l=0; l<n; l++){
-        for(int r=l; r<n; r++){
-           
-           
-        }
+    int sum = 0;
+    for(int i=0; i<n; i++){
+        sum = (i+1)* ( n -i )*a[i];
     }
+    cout<<sum;
 }
