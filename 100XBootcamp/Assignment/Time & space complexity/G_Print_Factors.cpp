@@ -1,3 +1,5 @@
+//ascending order mai print krna hai
+
 #include<iostream>
 #include<vector>
 using namespace std;
