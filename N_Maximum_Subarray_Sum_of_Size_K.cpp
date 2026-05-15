@@ -8,9 +8,12 @@ signed main(){
     for(int i=0; i<n; i++){
         cin>>a[i];
     }
-    int sum = 0;
+    int sum = 0 , ans=0;
     for(int i=0; i<n; i++){
-        sum = (i+1)* ( n -i )*a[i];
+        sum += (i+1)*( n -i )*a[i];
+        if(ans<sum){
+            ans = sum;
+        }
     }
-    cout<<sum;
+    cout<<ans;
 }
