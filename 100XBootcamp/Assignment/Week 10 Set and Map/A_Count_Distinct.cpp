@@ -1,6 +1,7 @@
 #include<iostream>
-using namespace std;
+#include<set>
 #define int long long
+using namespace std;
 signed main(){
     int n;
     cin>>n;
@@ -8,12 +9,11 @@ signed main(){
     for(int i=0; i<n; i++){
         cin>>a[i];
     }
-    int sum = 0 , ans=0;
+
+    set<int>sets;
     for(int i=0; i<n; i++){
-        sum += (i+1)*( n -i )*a[i];
-        if(ans<sum){
-            ans = sum;
-        }
+        sets.insert(a[i]);
     }
-    cout<<ans;
+  
+    cout<<sets.size();
 }
