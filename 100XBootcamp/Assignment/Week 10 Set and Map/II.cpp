@@ -16,9 +16,14 @@ signed main(){
         }else if(typ == 2){
             int num;
             cin>>num;
-            if(mp.find(num) !=mp.end()){
+            if(mp.find(num)!= mp.end()){
+              mp[num]--;
+              if(mp[num] == 0){
                 mp.erase(num);
+              }  
             }
+           
+         
         }else if(typ == 3){
             cout<<mp.size()<<"\n";
         }else {
