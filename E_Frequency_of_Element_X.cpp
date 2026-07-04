@@ -13,7 +13,7 @@ signed main(){
         for(int i=0; i<n; i++){
             int mn=arr[i];
             int location=i;
-            for(int j=j+1; j<n; j++){
+            for(int j=i+1; j<n; j++){
                 if(mn>arr[j]){
                     mn=arr[j]; location=j;
                 }
@@ -21,23 +21,24 @@ signed main(){
             swap(arr[i] , arr[location]);
         }
     while(q--){
+        int a=-1;
         int x;
         cin>>x;
        int s=0 ;int  e=n-1;
-       int a=-1;
        while(s<=e){
-        int mid= s+(s - e)/2;
+        int mid= s+(e - s)/2;
         if(arr[mid]>=x){
             a=mid;
             e=mid-1;
         }else{
             s=mid+1;
         }
-        if(a!=-1){
-        cout<<n-a+1<<"\n";
+        
+       }
+       if(a!=-1){
+        cout<<n-a<<"\n";
         }else{
             cout<<0<<"\n";
         }
-       }
     }
 }
