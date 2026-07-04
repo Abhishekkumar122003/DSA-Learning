@@ -10,16 +10,17 @@ signed main(){
     for(int i =0; i<n; i++){
        cin>>arr[i];
     }
-        for(int i=0; i<n; i++){
-            int mn=arr[i];
-            int location=i;
-            for(int j=i+1; j<n; j++){
-                if(mn>arr[j]){
-                    mn=arr[j]; location=j;
-                }
-            }
-            swap(arr[i] , arr[location]);
-        }
+    sort(arr, arr+n);
+        // for(int i=0; i<n; i++){
+        //     int mn=arr[i];
+        //     int location=i;
+        //     for(int j=i+1; j<n; j++){
+        //         if(mn>arr[j]){
+        //             mn=arr[j]; location=j;
+        //         }
+        //     }
+        //     swap(arr[i] , arr[location]);
+        // }
     while(q--){
         int a=-1;
         int x;
