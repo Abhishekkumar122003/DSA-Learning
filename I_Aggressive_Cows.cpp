@@ -1,5 +1,6 @@
 #include<iostream>
-usine namespace std;
+#include<bits/stdc++.h>
+using namespace std;
 #define int long long
 signed main(){
     int n,k;
@@ -8,5 +9,26 @@ signed main(){
     for(int i=0; i<n; i++){
         cin>>arr[i];
     }
-    
+
+    sort(arr , arr+n);
+    int start =1 , end = arr[n-1];
+    int ans;
+    while(start <= end){
+        int mid = start + (end - start)/2;
+        int pos_of_cow=arr[0] , count_of_cow=1;
+        for(int i=0; i<n; i++){
+            if(pos_of_cow +mid <= arr[i]){
+                pos_of_cow=arr[i];
+                count_of_cow++;
+            }
+        }
+        if(count_of_cow >= k){
+            end = mid-1;
+            ans = mid;
+        }else{
+            start = mid+1;
+        }
+
+    }
+    cout<<ans;
 }
