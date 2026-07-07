@@ -18,6 +18,8 @@ signed main(){
             cout<<0<<"\n";
         }else if(x>arr[n-1] && y> arr[n-1]){
             cout<<0<<'\n';;
+        }else if(y<arr[0] && x<arr[0]){
+            cout<<0<<'\n';
         }
         else{
             int start =0 , end =n-1;
@@ -25,13 +27,11 @@ signed main(){
             int x_index;
             while(start <= end){
                 int mid = start + (end -start)/2;
-                if(arr[mid] == x){
+                if(arr[mid] >= x){
                     x_index = mid;
                     end = mid -1;
-                }else if(arr[mid]<x){
+                }else {
                     start = mid+1;
-                }else{
-                    end = mid -1;
                 }
             }
 
@@ -52,3 +52,8 @@ signed main(){
         }
     }
 }
+
+//code that i written before is not capable to pass these edge case
+// 1. arr[5 , 10, 15] x=6 y=15
+// 2. x<arr[0] y<arr[0]
+// 3. x=-100 y=-50 arr[2,4,5]
