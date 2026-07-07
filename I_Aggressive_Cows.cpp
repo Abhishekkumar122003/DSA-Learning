@@ -11,7 +11,7 @@ signed main(){
     }
 
     sort(arr , arr+n);
-    int start =1 , end = arr[n-1];
+    int start =1 , end = arr[n-1]-arr[0];
     int ans;
     while(start <= end){
         int mid = start + (end - start)/2;
@@ -23,10 +23,10 @@ signed main(){
             }
         }
         if(count_of_cow >= k){
-            end = mid-1;
             ans = mid;
-        }else{
             start = mid+1;
+        }else{
+            end = mid-1;
         }
 
     }
