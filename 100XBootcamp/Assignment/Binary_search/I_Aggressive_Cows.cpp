@@ -16,7 +16,7 @@ signed main(){
     while(start <= end){
         int mid = start + (end - start)/2;
         int pos_of_cow=arr[0] , count_of_cow=1;
-        for(int i=0; i<n; i++){
+        for(int i=0;     i<n; i++){
             if(pos_of_cow +mid <= arr[i]){
                 pos_of_cow=arr[i];
                 count_of_cow++;
