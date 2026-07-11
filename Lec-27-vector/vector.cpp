@@ -87,21 +87,26 @@ int main(){
      
     //Sorting in vector
     sort(arr.begin() , arr.end()); // increasing Order 
-    for(auto i: arr){
-        cout<<i<<"\n";
-    }
-    cout<<endl;
+    // for(auto i: arr){
+    //     cout<<i<<"\n";
+    // }
+    // cout<<endl;
     // sort(arr.rbegin() , arr.rend());
     // for(auto i: arr){
     //     cout<<i<<"\n";
     // }
-    cout<<endl;
+    // cout<<endl;
 
-    sort(arr.begin() , arr.end(), greater<int>());
-    for(auto i: arr){
-        cout<<i<<endl;
-    }
+    // sort(arr.begin() , arr.end(), greater<int>());
+    // for(auto i: arr){
+    //     cout<<i<<endl;
+    // }
 
+
+    //Search in vector
+
+    // cout<<binary_search(arr.begin() , arr.end() , 1)<<endl;  // it print 1= "YES-Present" 0= "NOT-Present"
+    cout<<find(arr.begin() , arr.end() , 5) - arr.begin()<<endl; 
     
     
 }
