@@ -54,22 +54,37 @@ int main(){
     vnew.push_back(6);
 
     //Delete element from vector
-    vnew.pop_back();
-    cout<<"Size of the Vector 'vnew' "<< vnew.size()<<"\n";
-    cout<<"Capacity of the Vector 'vnew' "<< vnew.capacity()<<"\n";
+    // vnew.pop_back();
+    // cout<<"Size of the Vector 'vnew' "<< vnew.size()<<"\n";
+    // cout<<"Capacity of the Vector 'vnew' "<< vnew.capacity()<<"\n";
 
     // vnew.erase(vnew.begin() +2);
     // cout<<"Size of the Vector 'vnew' "<< vnew.size()<<"\n";
     // cout<<"Capacity of the Vector 'vnew' "<< vnew.capacity()<<"\n";
     
     // Insert element in vector
-    vnew.insert(vnew.begin() +1 , 50);
-    cout<<"Size of the Vector 'vnew' "<< vnew.size()<<"\n";
-    cout<<"Capacity of the Vector 'vnew' "<< vnew.capacity()<<"\n";
-    for(int i=0; i<vnew.size(); i++){
-        cout<<vnew[i]<<"\n";
-    }
 
+    // vnew.insert(vnew.begin() +1 , 50);
+    // cout<<"Size of the Vector 'vnew' "<< vnew.size()<<"\n";
+    // cout<<"Capacity of the Vector 'vnew' "<< vnew.capacity()<<"\n";
+    // for(int i=0; i<vnew.size(); i++){
+    //     cout<<vnew[i]<<"\n";
+    // }
+
+
+    //Front method to print the element of the vector
+    vector<int> arr;
+    arr.push_back(3);
+    arr.push_back(6);
+    arr.push_back(4);
+    arr.push_back(2);
+    arr.push_back(1);
+    arr.push_back(5);
+
+    // cout<<arr[0]<<endl; //to print the element or
+    // cout<<arr.front()<<endl;
+     
+    //
     
     
 }
