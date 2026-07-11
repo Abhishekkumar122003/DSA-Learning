@@ -1,5 +1,6 @@
 #include<iostream>
 #include<vector>
+#include<bits/stdc++.h>
 using namespace std;
 int main(){
 
@@ -84,7 +85,23 @@ int main(){
     // cout<<arr[0]<<endl; //to print the element or
     // cout<<arr.front()<<endl;
      
-    //
+    //Sorting in vector
+    sort(arr.begin() , arr.end()); // increasing Order 
+    for(auto i: arr){
+        cout<<i<<"\n";
+    }
+    cout<<endl;
+    // sort(arr.rbegin() , arr.rend());
+    // for(auto i: arr){
+    //     cout<<i<<"\n";
+    // }
+    cout<<endl;
+
+    sort(arr.begin() , arr.end(), greater<int>());
+    for(auto i: arr){
+        cout<<i<<endl;
+    }
+
     
     
 }
