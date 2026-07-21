@@ -1,6 +1,7 @@
 #include<iostream>
+#define int long long
 using namespace std;
-int main(){
+signed main(){
     int n , k;
     cin>>n>>k;
     k--;
@@ -9,22 +10,17 @@ int main(){
         cin>>arr[i];
     }
     int sum=0;
-    for(int i=0; i<n; i++){
-        if(i<=k){
-            sum += arr[i];
-        }else{
-            break;
-        }
+    for(int i=0; i<=k; i++){
+        sum+= arr[i];
     }
+    int st=0 , ed=k+1;
     int ans=sum;
-    for(int i=0; i<n-1; i++){
-        int nu=i+k;
-        if(nu<n){
-        ans =  arr[nu] + arr[i];
+    while(ed<n){
+        ans += arr[ed] - arr[st];
+        if(ans>sum){
+            sum=ans;
         }
-        if(ans>= sum){
-            sum = ans;
-        }
+        st++ , ed++;
     }
     cout<<sum;
 
