@@ -5,24 +5,23 @@ using namespace std;
 signed main(){
     int n, tar;
     cin>>n>>tar;
-    // int p[n];
     set<int> st;
-    int sum =0;
+    int pre_sum =0;
     for(int i=0; i<n; i++){
         int k;
         cin>>k;
-        sum+=k;
-        // p[i]=sum;
-        st.insert(sum);
+        pre_sum+=k;
+        if(pre_sum == tar){
+            cout<<"YES";
+            return NULL;
+        }
+        if(st.find(pre_sum - tar) != st.end()){
+            cout<<"YES";
+            return NULL;
+        }
+        st.insert(pre_sum);
     }
-    // for(int val : st){
-    //     cout<<val<<" ";
-    // }
-    if(st.find(tar) != st.end()){
-        cout<<"YES";
-    }else{
-        cout<<"NO";
-    }
+    cout<<"NO";
 
 
 }
