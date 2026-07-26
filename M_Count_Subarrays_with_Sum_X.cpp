@@ -22,11 +22,7 @@ signed main(){
             counter +=mp[req];;
         }
 
-        if(mp.find(pre_sum) != mp.end()){
-            mp[pre_sum]++;
-        }else{
-            mp[pre_sum]=1;
-        }
+        mp[pre_sum]++;
         
     }
     // for(auto x: mp){
