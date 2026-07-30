@@ -4,6 +4,7 @@
 using namespace std;
 signed main(){
     int n,k;
+    
     cin>>n>>k;
     if(n==1 && k==1){
         cout<<1;
