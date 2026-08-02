@@ -13,7 +13,7 @@ signed main(){
     
     string s;
     cin>>s;
-    set<int> st;
+    set<char> st;
     int left=0, max_length=0 , length=0;
     for(int right=0; right<n; right++){
         if(st.find(s[right]) != st.end()){
