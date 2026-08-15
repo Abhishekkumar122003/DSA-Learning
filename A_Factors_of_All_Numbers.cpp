@@ -10,7 +10,7 @@ signed main(){
     }
     cout<<1<<" ";
     for(int i=2; i<n; i++){
-        int f1 , f2;
+        int f1 , f2,d;
         
         for(int j=2; j*j<=i; j++){                                                  
             if(i%j==0){
