@@ -5,4 +5,4 @@ signed main(){
     int n;
     cin>>n;
    
-}
+}  
