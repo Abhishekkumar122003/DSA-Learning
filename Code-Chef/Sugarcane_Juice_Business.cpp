@@ -10,9 +10,8 @@
     int each_glass_price=50;
     cout<<(long long)((.3*each_glass_price*total_glass))<<endl;
 
-    // here i use "long long" becaouse the when total_galss count become to large it become double so to show it in integer form i have to convert it into long long formet
+    // here i use "long long" becaouse the when (.3*each_glass_price*total_glass) ka fractional part hata do or sirf integer part do, when i use float data type but now i use int and long long
   }
-
   int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
