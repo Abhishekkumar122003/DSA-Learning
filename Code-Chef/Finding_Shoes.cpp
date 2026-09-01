@@ -2,10 +2,9 @@
 using namespace std;
 
 void solve(){
-    int x,y;
-   cin>>x>>y;
-   cout<<x/(2*y)<<endl;
-   
+    int N,M;
+   cin>>N>>M;
+   (M>=N)? cout<<N<<"\n" : cout<<N+(N-M)<<"\n";
     
 }
 
