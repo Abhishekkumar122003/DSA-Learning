@@ -4,10 +4,12 @@
     int N,X,K;
     cin>>N>>X>>K;
     int totalBottle = K/X;
-    if(totalBottle >= N){
+    if(totalBottle == 0){
+        cout<<0;
+    }else if(totalBottle >= N){
         cout<<N;
-    }else{
-        cout<<
+    }else if(totalBottle < N){
+        cout<<totalBottle;
     }
     cout<<"\n";
 }
