@@ -3,7 +3,16 @@
  void solov(){
     int N,M;
     cin>>N>>M;
-     
+     if(N % M ==0){
+        int each = N/M;
+        if(each  % 2 == 0){
+            cout<<"Yes";
+        }else{
+            cout<<"No";
+        }
+     }else{
+        cout<<"No";
+     }
 
 
     cout<<"\n";
