@@ -9,6 +9,7 @@ void solve(){
         cout<<0<<"\n";
     }else{
         int c2= K - N;
+        //fhdf
         cout<<c2*2<<"\n";
     }
 
