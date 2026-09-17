@@ -3,16 +3,9 @@
 using namespace std;
 
 void solve(){
-   int a,b;
-   cin>>a>>b;
-   int total_cookies=a+b;
-   if(total_cookies % 2 != 0){
-    cout<<-1<<endl;
-   }else{
-    int half = total_cookies/2;
-    int req = half - b;
-    cout<<req<<endl;
-   }
+   int N;
+   cin>>N;
+   (N% 4== 0)? cout<<N+1:cout<<N-1;
 }
 
 int main(){
