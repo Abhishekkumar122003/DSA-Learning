@@ -2,10 +2,17 @@
 #include<bits/stdc++.h>
 using namespace std;
 void solve(){
-    int N;
-    cin>>N;
-    cout<<N*(N-1);
-    cout<<endl;
+    float A,B,X,Y;
+    cin>>A>>B>>X>>Y;
+    float time_chef = A/X;
+    float time_chefina = B/Y;
+    if(time_chef > time_chefina){
+        cout<<"Chefina"<<"\n";
+    }else if(time_chef < time_chefina){
+        cout<<"Chef"<<"\n";
+    }else{
+        cout<<"Both"<<"\n";
+    }
 }
 
 int main(){
