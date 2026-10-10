@@ -20,7 +20,7 @@ void solve(){
     if(N ==1){
         cout<<0;
     }else if(N >= 2 && N<9){
-        cout<<1<<"bdfb";
+        cout<<1;
     }else{
         int favDay = N/7;
         if(N%7 >= 2){
